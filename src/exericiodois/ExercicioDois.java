@@ -3,6 +3,37 @@ package exericiodois;
 public class ExercicioDois {
 
 	
+	public static void main (String[] args){
+		
+		
+		String cadeiaA = "PALAVRA1";
+		String cadeiaB = "PALAVRA2";
+		
+		
+		int x = 0;
+		
+		if(cadeiaA.equals(cadeiaB)){
+			System.out.println("Iguais");
+		}else{
+			
+			for (int i = 0; i < cadeiaA.length(); i++) {
+				
+				if(cadeiaA.charAt(i) == cadeiaB.charAt(i)){
+					x++;
+				}
+			}
+			
+			if(x > 0){
+				System.out.println("Pontos: " + x);
+			}
+			else{
+				System.out.println("Nada");
+			}
+
+		}
+		
+	}	
+	
 	/*
 	 * Crie uma classe Java e defina um método que compara duas cadeias de caracteres (A e B).
 		Utilize os critérios a seguir:
